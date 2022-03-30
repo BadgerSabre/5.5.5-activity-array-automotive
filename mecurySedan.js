@@ -1,11 +1,12 @@
 //this includes the vehicle class as a module
 const VehicleModule = require("./vehicle")
+import Vehicle from "./vehicle.js";
 
 //this shows how to call from this module...
 let v = new VehicleModule.Vehicle("Mecury", "Sedan", "1965", "color", "mileage");
 console.log(v.make)
 
-class mercurySedan extends VehicleModule.Vehicle {
+class mercurySedan extends Vehicle {
     constructor(maxPass, pass, wheelNum, maxSpeed, fuel, scheduledService){
         super(make, model, year, color, mileage)
         this.maxPass = 6;
