@@ -7,7 +7,7 @@ let v = new VehicleModule.Vehicle("Mecury", "Sedan", "1965", "color", "mileage")
 console.log(v.make)
 
 class mercurySedan extends Vehicle {
-    constructor(maxPass, pass, wheelNum, maxSpeed, fuel, scheduledService){
+    constructor(make, model, year, color, mileage, maxPass, pass, wheelNum, maxSpeed, fuel, scheduledService){
         super(make, model, year, color, mileage)
         this.maxPass = 6;
         this.pass = 0;
